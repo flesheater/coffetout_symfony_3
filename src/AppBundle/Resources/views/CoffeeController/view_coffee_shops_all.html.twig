@@ -1,0 +1,12 @@
+{% extends 'base.html.twig' %}
+
+{% block title_heading %}All coffee shops{% endblock %}
+
+{% block title %}All coffee shops{% endblock %}
+
+{% block body %}
+	{% for item in coffeeshops %}
+    	<li>{{ item.name }} | <a href="/view/{{ item.id }}">view</a> | <a href="/admin/edit/{{ item.id }}">edit</a></li>
+	{% endfor %}
+
+{% endblock %}

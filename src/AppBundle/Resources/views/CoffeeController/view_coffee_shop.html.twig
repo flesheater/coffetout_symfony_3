@@ -1,0 +1,13 @@
+{% extends "::base.html.twig" %}
+
+{% block title_heading %}{{ coffeeshop.name }}{% endblock %}
+
+{% block title %}{{ coffeeshop.name }}{% endblock %}
+
+{% block body %}
+
+	<div class="body">
+		{{ coffeeshop.description }}
+	</div>
+
+{% endblock %}
